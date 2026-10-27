@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════
+   GOVERN·OS  —  Design System
+   Intendencia Departamental de Lavalleja
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Light mode (default) ────────────────────────────────── */
+:root {
+  --bg:            #eef2f7;
+  --surface:       #ffffff;
+  --card:          #ffffff;
+  --card-hover:    #f8fafc;
+  --column-bg:     rgba(255,255,255,0.65);
+  --border:        rgba(0,0,0,0.08);
+  --border-bright: rgba(0,0,0,0.15);
+
+  --nav-bg:        rgba(255,255,255,0.95);
+  --nav-border:    rgba(0,0,0,0.08);
+  --dropdown-bg:   #ffffff;
+  --dropdown-shadow: 0 16px 40px rgba(0,0,0,0.14);
+
+  --muted-bg:      rgba(0,0,0,0.04);
+  --muted-bg-hover: rgba(0,0,0,0.07);
+
+  --input-bg:      #f8fafc;
+  --input-text:    #0f172a;
+  --input-placeholder: #64748b;
+
+  --accent:        #6366f1;
+  --accent-light:  #818cf8;
+  --accent-glow:   rgba(99,102,241,0.2);
+
+  --gold:          #f59e0b;
+  --gold-light:    #fbbf24;
+  --gold-glow:     rgba(245,158,11,0.2);
+
+  --text:          #0f172a;
+  --text-mid:      #334155;
+  --text-muted:    #64748b;
+  --title:         #0b1324;
+  --title-soft:    #1e293b;
+
+  --success:       #16a34a;
+  --danger:        #ef4444;
+  --warning:       #f97316;
+  --info:          #3b82f6;
+
+  --radius-sm:     6px;
+  --radius:        10px;
+  --radius-lg:     16px;
+
+  /* Utility tokens */
+  --divider:          rgba(0,0,0,0.07);
+  --chart-grid:       rgba(0,0,0,0.08);
+  --tooltip-bg:       #ffffff;
+  --tooltip-border:   rgba(0,0,0,0.10);
+  --skeleton:         rgba(0,0,0,0.06);
+  --overlay:          rgba(0,0,0,0.45);
+  --cancel-btn-bg:    rgba(0,0,0,0.05);
+  --cancel-btn-border: rgba(0,0,0,0.12);
+}
+
+/* ── Dark mode ───────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:            #050510;
+  --surface:       #0d0d1a;
+  --card:          #13131f;
+  --card-hover:    #1a1a2b;
+  --column-bg:     rgba(255,255,255,0.025);
+  --border:        rgba(255,255,255,0.07);
+  --border-bright: rgba(255,255,255,0.14);
+
+  --nav-bg:        rgba(5,5,16,0.92);
+  --nav-border:    rgba(255,255,255,0.07);
+  --dropdown-bg:   #0d0d1f;
+  --dropdown-shadow: 0 16px 40px rgba(0,0,0,0.5);
+
+  --muted-bg:      rgba(255,255,255,0.05);
+  --muted-bg-hover: rgba(255,255,255,0.09);
+
+  --input-bg:      #1e293b;
+  --input-text:    #e2e8f0;
+  --input-placeholder: #94a3b8;
+
+  --accent:        #6366f1;
+  --accent-light:  #818cf8;
+  --accent-glow:   rgba(99,102,241,0.25);
+
+  --gold:          #f59e0b;
+  --gold-light:    #fbbf24;
+  --gold-glow:     rgba(245,158,11,0.22);
+
+  --text:          #e2e8f0;
+  --text-mid:      #94a3b8;
+  --text-muted:    #475569;
+  --title:         #f1f5f9;
+  --title-soft:    #cbd5e1;
+
+  --success:       #22c55e;
+  --danger:        #ef4444;
+  --warning:       #f97316;
+  --info:          #3b82f6;
+
+  /* Utility tokens */
+  --divider:          rgba(255,255,255,0.07);
+  --chart-grid:       rgba(255,255,255,0.06);
+  --tooltip-bg:       #0d0d1f;
+  --tooltip-border:   rgba(255,255,255,0.10);
+  --skeleton:         rgba(255,255,255,0.05);
+  --overlay:          rgba(0,0,0,0.60);
+  --cancel-btn-bg:    rgba(255,255,255,0.05);
+  --cancel-btn-border: rgba(255,255,255,0.10);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  color: var(--title);
+}
+
+h4, h5, h6 {
+  color: var(--title-soft);
+}
+
+input,
+textarea,
+select {
+  color: var(--input-text);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+/* Scrollbar refinada */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,0.35); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(100,116,139,0.55); }
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.14); }
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.24); }
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 2px;
+}
+
+/* Animación de fondo sutil */
+@keyframes subtleShift {
+  0%,100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #050510 0%, #0d0d20 40%, #0a0520 100%);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow effect for badges */
+.accent-glow { box-shadow: 0 0 16px var(--accent-glow); }
+.gold-glow   { box-shadow: 0 0 16px var(--gold-glow); }

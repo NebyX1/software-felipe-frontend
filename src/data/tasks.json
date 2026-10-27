@@ -1,0 +1,311 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Gestión Municipal 2025",
+      "active": true,
+      "tasks": [
+        {
+          "id": "1",
+          "name": "Elaborar presupuesto anual",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-01-10",
+          "dueDate": "2025-01-31",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "2",
+          "name": "Supervisar recolección de residuos en zonas críticas",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-01-12",
+          "dueDate": "2025-01-15",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "3",
+          "name": "Organizar feria de empleo comunitario",
+          "responsible": "Directora de Servicios Sociales",
+          "startDate": "2025-01-18",
+          "dueDate": "2025-01-20",
+          "priority": "Alta",
+          "status": "En Progreso",
+          "office": "servicios sociales"
+        },
+        {
+          "id": "4",
+          "name": "Coordinar programa de subsidios a pequeños productores",
+          "responsible": "Director de Desarrollo Rural",
+          "startDate": "2025-01-22",
+          "dueDate": "2025-01-30",
+          "priority": "Baja",
+          "status": "En Revisión",
+          "office": "desarrollo rural"
+        },
+        {
+          "id": "5",
+          "name": "Inspeccionar avances en obras del nuevo puente peatonal",
+          "responsible": "Director de Arquitectura y Obras",
+          "startDate": "2025-01-20",
+          "dueDate": "2025-01-25",
+          "priority": "Alta",
+          "status": "Terminado",
+          "office": "arquitectura y obras"
+        },
+        {
+          "id": "6",
+          "name": "Actualizar sistema de gestión tributaria",
+          "responsible": "Directora de Tecnologías de la Información",
+          "startDate": "2025-01-15",
+          "dueDate": "2025-01-22",
+          "priority": "Alta",
+          "status": "Terminado",
+          "office": "tecnologías de la información"
+        },
+        {
+          "id": "7",
+          "name": "Diseñar campaña de reciclaje escolar",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-10",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "8",
+          "name": "Revisión de contratos con proveedores de alimentos",
+          "responsible": "Directora de Hacienda",
+          "startDate": "2025-01-25",
+          "dueDate": "2025-01-30",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "9",
+          "name": "Evaluar plan de ordenamiento territorial en zona rural",
+          "responsible": "Director de Arquitectura y Obras",
+          "startDate": "2025-02-05",
+          "dueDate": "2025-02-15",
+          "priority": "Media",
+          "status": "En Progreso",
+          "office": "arquitectura y obras"
+        },
+        {
+          "id": "10",
+          "name": "Implementar software de seguimiento de casos sociales",
+          "responsible": "Directora de Servicios Sociales",
+          "startDate": "2025-01-25",
+          "dueDate": "2025-02-10",
+          "priority": "Alta",
+          "status": "En Revisión",
+          "office": "servicios sociales"
+        },
+        {
+          "id": "11",
+          "name": "Planificar rutas de transporte público accesible",
+          "responsible": "Director de Desarrollo Rural",
+          "startDate": "2025-01-20",
+          "dueDate": "2025-01-28",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "desarrollo rural"
+        },
+        {
+          "id": "12",
+          "name": "Capacitar al personal sobre normativas ambientales",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-03",
+          "dueDate": "2025-02-07",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "13",
+          "name": "Revisar sistema de iluminación pública en barrios nuevos",
+          "responsible": "Director de Arquitectura y Obras",
+          "startDate": "2025-01-28",
+          "dueDate": "2025-02-05",
+          "priority": "Alta",
+          "status": "En Progreso",
+          "office": "arquitectura y obras"
+        },
+        {
+          "id": "14",
+          "name": "Organizar taller de inclusión digital para adultos mayores",
+          "responsible": "Directora de Tecnologías de la Información",
+          "startDate": "2025-01-30",
+          "dueDate": "2025-02-10",
+          "priority": "Baja",
+          "status": "Por Hacer",
+          "office": "tecnologías de la información"
+        },
+        {
+          "id": "15",
+          "name": "Preparar informes financieros trimestrales",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-15",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "16",
+          "name": "Supervisar limpieza de espacios públicos tras eventos",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-02",
+          "dueDate": "2025-02-06",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "17",
+          "name": "Gestionar permisos para apertura de nuevos comercios",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-02-04",
+          "dueDate": "2025-02-08",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "18",
+          "name": "Diseñar plan de emergencia climática",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-20",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "19",
+          "name": "Evaluar implementación de paneles solares en edificios públicos",
+          "responsible": "Director de Arquitectura y Obras",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-15",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "arquitectura y obras"
+        },
+        {
+          "id": "20",
+          "name": "Auditar uso de fondos para proyectos sociales",
+          "responsible": "Directora de Servicios Sociales",
+          "startDate": "2025-02-05",
+          "dueDate": "2025-02-15",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "servicios sociales"
+        },
+        {
+          "id": "21",
+          "name": "Crear campaña de concientización ambiental",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-01-25",
+          "dueDate": "2025-02-05",
+          "priority": "Media",
+          "status": "En Progreso",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "22",
+          "name": "Actualizar mapas digitales del municipio",
+          "responsible": "Directora de Tecnologías de la Información",
+          "startDate": "2025-02-05",
+          "dueDate": "2025-02-20",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "tecnologías de la información"
+        },
+        {
+          "id": "23",
+          "name": "Supervisar rehabilitación de caminos rurales",
+          "responsible": "Director de Desarrollo Rural",
+          "startDate": "2025-01-15",
+          "dueDate": "2025-02-01",
+          "priority": "Alta",
+          "status": "En Revisión",
+          "office": "desarrollo rural"
+        },
+        {
+          "id": "24",
+          "name": "Diseñar material educativo para escuelas sobre reciclaje",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-10",
+          "dueDate": "2025-02-28",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "25",
+          "name": "Organizar reunión comunitaria para escuchar propuestas",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-01-30",
+          "dueDate": "2025-02-02",
+          "priority": "Baja",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "26",
+          "name": "Supervisar poda de árboles en avenidas principales",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-07",
+          "priority": "Media",
+          "status": "En Progreso",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "27",
+          "name": "Revisar contratos de arrendamiento de maquinaria pesada",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-02-05",
+          "dueDate": "2025-02-10",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        },
+        {
+          "id": "28",
+          "name": "Planificar colocación de contenedores de reciclaje",
+          "responsible": "Directora de Medio Ambiente",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-20",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "medio ambiente"
+        },
+        {
+          "id": "29",
+          "name": "Realizar inventario de mobiliario urbano",
+          "responsible": "Director de Arquitectura y Obras",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-02-15",
+          "priority": "Media",
+          "status": "Por Hacer",
+          "office": "arquitectura y obras"
+        },
+        {
+          "id": "30",
+          "name": "Organizar evento de rendición de cuentas anual",
+          "responsible": "Director de Hacienda",
+          "startDate": "2025-01-20",
+          "dueDate": "2025-02-10",
+          "priority": "Alta",
+          "status": "Por Hacer",
+          "office": "hacienda"
+        }
+      ]
+    }
+  ]
+}

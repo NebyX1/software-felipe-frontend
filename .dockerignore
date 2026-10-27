@@ -1,0 +1,48 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Git metadata
+.git
+
+# Backend / extras not needed for frontend image
+backend/
+sample-backend/
+sample-frontend/
+
+# IDE / editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Optional local scripts if truly unused by build
+scripts/
+*.pem
+*.key
+credentials*.json
+backups
+test-results
+playwright-report
+tmp
+
+.github
+.gitignore
+.gitattributes
+README.md
+docs
+compose*.yaml
+tests
+playwright.config.ts

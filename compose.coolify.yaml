@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    environment:
+      BACKEND_URL: ${BACKEND_URL:?Configure el origen HTTPS del backend}
+      SERVICE_URL_WEB: /
+    expose: ["80"]
+    restart: unless-stopped

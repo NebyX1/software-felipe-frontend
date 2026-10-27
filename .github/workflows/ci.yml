@@ -1,0 +1,34 @@
+name: Verify standalone frontend
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Verify distributable sources
+        run: python scripts/verify_no_secrets.py
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - name: Build independent image
+        run: docker build -t felipe-frontend:ci .
+      - name: Verify startup without a running backend
+        run: |
+          docker run -d --name frontend-ci -p 127.0.0.1:18088:80 -e BACKEND_URL=https://api.example.invalid felipe-frontend:ci
+          for n in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:18088/health; then break; fi
+            sleep 2
+          done
+          curl -fsS http://127.0.0.1:18088/health
+          curl -fsS http://127.0.0.1:18088/obras > /dev/null
+          docker exec frontend-ci nginx -t
+      - name: Stop test container
+        if: always()
+        run: docker rm -f frontend-ci

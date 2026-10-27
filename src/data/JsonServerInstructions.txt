@@ -1,0 +1,2 @@
+Para correr Json Server indicando el puerto y la carpeta del archivo dummy poner:
+    >npx json-server --watch src/data/tasks.json --port 3001
